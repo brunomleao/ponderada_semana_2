@@ -23,7 +23,7 @@ Para executar esta aplicação, você precisa dos seguintes componentes instalad
 - **Yarn** para gerenciar dependências
 - **Docker** para containerização
 
-Certifique-se de que essas ferramentas estão acessíveis via linha de comando. Além disso, portas **3000** e **7007** devem estar abertas no firewall.
+Certifique-se de que essas ferramentas estão acessíveis via linha de comando. Além disso, portas **3000** e **3000** devem estar abertas no firewall.
 
 ### 2. Instalação e Configuração
 
@@ -69,7 +69,7 @@ Após a construção da imagem, execute o contêiner Docker.
 1. **Executar o Contêiner:**
 
    ```bash
-   docker run -it -p 7007:7007 backstage
+   docker run -it -p 3000:3000 backstage
    ```
 
 2. **Logs e Verificação:**
@@ -80,15 +80,17 @@ Após a construção da imagem, execute o contêiner Docker.
 Abra o navegador e acesse o Backstage na URL:
 
 ```plaintext
-http://localhost:7007
+http://localhost:3000
 ```
 
-Acesse a funcionalidade de catálogo de serviços no link [Backstage Demo Catalog](http://localhost:7007/catalog?filters%5Bkind%5D=component&filters%5Buser%5D=all) para verificar se o catálogo está funcionando conforme o esperado.
+Acesse a funcionalidade de catálogo de serviços no link [Backstage Demo Catalog](http://localhost:3000/catalog?filters%5Bkind%5D=component&filters%5Buser%5D=all) para verificar se o catálogo está funcionando conforme o esperado.
 
 ### 6. Evidências de Execução
 
 Aqui estão alguns prints de tela para demonstrar a aplicação em execução:
+<img width="1440" alt="Captura de Tela 2024-11-01 às 11 14 06" src="https://github.com/user-attachments/assets/b80c42dd-8a65-48b2-9183-711fa781626e">
 
+<img width="1440" alt="Captura de Tela 2024-11-01 às 11 14 13" src="https://github.com/user-attachments/assets/5f368831-6918-464b-908a-2e41789306c8">
 
 ---
 
